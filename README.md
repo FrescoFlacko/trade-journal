@@ -133,6 +133,21 @@ trade-journal/
    The API will be available at `http://localhost:8000`
    API documentation at `http://localhost:8000/docs`
 
+9. **(Optional) Seed the database with demo data**:
+   ```bash
+   python seed.py
+   ```
+
+   This creates a demo account with sample trades and strategies:
+   - **Username**: `demo`
+   - **Password**: `demo123`
+   - **Email**: `demo@tradejournal.com`
+
+   The seed script creates:
+   - 3 sample trading strategies
+   - 20 sample trades with realistic data
+   - Both open and closed positions
+
 ### Frontend Setup
 
 1. **Navigate to the frontend directory**:
@@ -153,6 +168,20 @@ trade-journal/
    The application will be available at `http://localhost:5173`
 
 ## Usage
+
+### Quick Start with Demo Account
+
+1. **Seed the database** (if you haven't already):
+   ```bash
+   cd backend
+   python seed.py
+   ```
+
+2. **Access the application**: Navigate to `http://localhost:5173`
+
+3. **Click "Try Demo Account"** on the login page to instantly access the application with sample data
+
+### Or Create Your Own Account
 
 1. **Register an account**: Navigate to `http://localhost:5173/register` and create a new account
 2. **Login**: Use your credentials to login
