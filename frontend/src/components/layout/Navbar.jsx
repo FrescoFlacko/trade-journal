@@ -36,8 +36,8 @@ export function Navbar() {
                 to={item.path}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   isActive(item.path)
-                    ? 'bg-template-primary text-white'
-                    : 'text-template-dark hover:bg-template-light'
+                    ? 'bg-template-primary text-template-dark'
+                    : 'text-template-dark hover:bg-template-primary/20'
                 }`}
               >
                 {item.label}
@@ -47,7 +47,7 @@ export function Navbar() {
               variant="ghost"
               size="sm"
               onClick={logout}
-              className="ml-4"
+              className="ml-4 text-template-dark hover:bg-template-primary/20"
             >
               <LogOut className="h-4 w-4 mr-2" />
               Logout
