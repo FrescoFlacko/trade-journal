@@ -30,10 +30,27 @@ A comprehensive trading journal application for tracking stock options, crypto p
 
 ## Color Palette
 
-- **Template BG / Light**: `#E7DFE2`
-- **Accent / Dark**: `#94727E`
-- **Secondary / Warm**: `#CD9B93`
-- **Primary / Success**: `#88D7BA`
+The application uses the **Eunry** color palette - a warm, earthy tone scheme:
+
+- **eunry-50**: `#faf7f6` - Lightest tint
+- **eunry-100**: `#f6ecea` - Background
+- **eunry-200**: `#efdcd9` - Muted elements
+- **eunry-300**: `#e2c4bf`
+- **eunry-400**: `#cd9b93` - Secondary/Warm
+- **eunry-500**: `#bc8177` - Primary
+- **eunry-600**: `#a6665c` - Accent
+- **eunry-700**: `#8a544b`
+- **eunry-800**: `#744740` - Text/Dark
+- **eunry-900**: `#62403a`
+- **eunry-950**: `#331f1c` - Darkest shade
+
+### Theme Mapping
+
+- **Background**: eunry-100 (`#f6ecea`)
+- **Text/Foreground**: eunry-800 (`#744740`)
+- **Primary**: eunry-500 (`#bc8177`)
+- **Secondary**: eunry-400 (`#cd9b93`)
+- **Accent**: eunry-600 (`#a6665c`)
 
 ## Project Structure
 

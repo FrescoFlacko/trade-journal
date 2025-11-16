@@ -1,30 +1,44 @@
 @import "tailwindcss";
 
 :root {
-  --background: #E7DFE2;
-  --foreground: #94727E;
+  /* Eunry color palette */
+  --color-eunry-50: #faf7f6;
+  --color-eunry-100: #f6ecea;
+  --color-eunry-200: #efdcd9;
+  --color-eunry-300: #e2c4bf;
+  --color-eunry-400: #cd9b93;
+  --color-eunry-500: #bc8177;
+  --color-eunry-600: #a6665c;
+  --color-eunry-700: #8a544b;
+  --color-eunry-800: #744740;
+  --color-eunry-900: #62403a;
+  --color-eunry-950: #331f1c;
+
+  /* Theme variables using eunry palette */
+  --background: #f6ecea;        /* eunry-100 */
+  --foreground: #744740;        /* eunry-800 */
   --card: #ffffff;
-  --card-foreground: #94727E;
+  --card-foreground: #744740;   /* eunry-800 */
   --popover: #ffffff;
-  --popover-foreground: #94727E;
-  --primary: #88D7BA;
-  --primary-foreground: #ffffff;
-  --secondary: #CD9B93;
-  --secondary-foreground: #ffffff;
-  --muted: #E7DFE2;
-  --muted-foreground: #94727E;
-  --accent: #94727E;
-  --accent-foreground: #ffffff;
+  --popover-foreground: #744740; /* eunry-800 */
+  --primary: #bc8177;           /* eunry-500 */
+  --primary-foreground: #faf7f6; /* eunry-50 */
+  --secondary: #cd9b93;         /* eunry-400 */
+  --secondary-foreground: #faf7f6; /* eunry-50 */
+  --muted: #efdcd9;             /* eunry-200 */
+  --muted-foreground: #744740;  /* eunry-800 */
+  --accent: #a6665c;            /* eunry-600 */
+  --accent-foreground: #faf7f6; /* eunry-50 */
   --destructive: #ef4444;
   --destructive-foreground: #fafafa;
-  --border: rgba(148, 114, 126, 0.2);
-  --input: rgba(148, 114, 126, 0.2);
-  --ring: #88D7BA;
+  --border: rgba(116, 71, 64, 0.2); /* eunry-800 with opacity */
+  --input: rgba(116, 71, 64, 0.2);
+  --ring: #bc8177;              /* eunry-500 */
   --radius: 0.5rem;
 }
 
 body {
-  background-color: #E7DFE2;
-  color: #94727E;
+  background-color: #f6ecea;    /* eunry-100 */
+  color: #744740;               /* eunry-800 */
   font-family: system-ui, -apple-system, sans-serif;
 }

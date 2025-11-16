@@ -7,44 +7,57 @@ export default {
   theme: {
     extend: {
       colors: {
-        template: {
-          light: '#E7DFE2',
-          dark: '#94727E',
-          warm: '#CD9B93',
-          primary: '#88D7BA',
+        eunry: {
+          50: '#faf7f6',
+          100: '#f6ecea',
+          200: '#efdcd9',
+          300: '#e2c4bf',
+          400: '#cd9b93',
+          500: '#bc8177',
+          600: '#a6665c',
+          700: '#8a544b',
+          800: '#744740',
+          900: '#62403a',
+          950: '#331f1c',
         },
-        border: 'rgba(148, 114, 126, 0.2)',
-        input: 'rgba(148, 114, 126, 0.2)',
-        ring: '#88D7BA',
-        background: '#E7DFE2',
-        foreground: '#94727E',
+        template: {
+          light: '#f6ecea',      // eunry-100
+          dark: '#744740',       // eunry-800
+          warm: '#cd9b93',       // eunry-400
+          primary: '#bc8177',    // eunry-500
+        },
+        border: 'rgba(116, 71, 64, 0.2)',  // eunry-800 with opacity
+        input: 'rgba(116, 71, 64, 0.2)',
+        ring: '#bc8177',                   // eunry-500
+        background: '#f6ecea',             // eunry-100
+        foreground: '#744740',             // eunry-800
         primary: {
-          DEFAULT: '#88D7BA',
-          foreground: '#ffffff',
+          DEFAULT: '#bc8177',              // eunry-500
+          foreground: '#faf7f6',          // eunry-50
         },
         secondary: {
-          DEFAULT: '#CD9B93',
-          foreground: '#ffffff',
+          DEFAULT: '#cd9b93',              // eunry-400
+          foreground: '#faf7f6',          // eunry-50
         },
         destructive: {
           DEFAULT: '#ef4444',
           foreground: '#fafafa',
         },
         muted: {
-          DEFAULT: '#E7DFE2',
-          foreground: '#94727E',
+          DEFAULT: '#efdcd9',              // eunry-200
+          foreground: '#744740',           // eunry-800
         },
         accent: {
-          DEFAULT: '#94727E',
-          foreground: '#ffffff',
+          DEFAULT: '#a6665c',              // eunry-600
+          foreground: '#faf7f6',          // eunry-50
         },
         popover: {
           DEFAULT: '#ffffff',
-          foreground: '#94727E',
+          foreground: '#744740',           // eunry-800
         },
         card: {
           DEFAULT: '#ffffff',
-          foreground: '#94727E',
+          foreground: '#744740',           // eunry-800
         },
       },
       borderRadius: {
