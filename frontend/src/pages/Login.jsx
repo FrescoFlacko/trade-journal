@@ -28,6 +28,16 @@ export function Login() {
     }
   };
 
+  const handleDemoLogin = async () => {
+    setError('');
+    const result = await login('demo', 'demo123');
+    if (result.success) {
+      navigate('/');
+    } else {
+      setError(result.error || 'Demo account not found. Please run the seed script first.');
+    }
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-template-light px-4">
       <div className="w-full max-w-md">
@@ -77,6 +87,25 @@ export function Login() {
 
               <Button type="submit" className="w-full" disabled={isLoading}>
                 {isLoading ? 'Logging in...' : 'Login'}
+              </Button>
+
+              <div className="relative">
+                <div className="absolute inset-0 flex items-center">
+                  <span className="w-full border-t" />
+                </div>
+                <div className="relative flex justify-center text-xs uppercase">
+                  <span className="bg-white px-2 text-muted-foreground">Or</span>
+                </div>
+              </div>
+
+              <Button
+                type="button"
+                variant="outline"
+                className="w-full"
+                onClick={handleDemoLogin}
+                disabled={isLoading}
+              >
+                Try Demo Account
               </Button>
 
               <p className="text-center text-sm text-muted-foreground">
