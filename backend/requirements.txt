@@ -1,5 +1,5 @@
-fastapi==0.104.1
-sqlalchemy==2.0.23
+fastapi==0.109.0
+sqlalchemy==2.0.25
 psycopg2-binary
 python-jose[cryptography]==3.3.0
 passlib[bcrypt]==1.7.4
@@ -7,5 +7,5 @@ python-multipart==0.0.6
 uvicorn[standard]==0.30.*
 pydantic==2.8.*
 pydantic-settings==2.3.*
-alembic==1.12.1
-python-dotenv==1.0.0
+alembic==1.13.1
+python-dotenv==1.0.1
