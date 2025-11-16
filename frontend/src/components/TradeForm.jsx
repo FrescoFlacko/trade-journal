@@ -154,12 +154,12 @@ export function TradeForm({ initialData = null, isEdit = false }) {
 
             <div className="space-y-2">
               <Label htmlFor="strategy">Strategy</Label>
-              <Select value={formData.strategy_id} onValueChange={(value) => handleChange('strategy_id', value)}>
+              <Select value={formData.strategy_id || 'none'} onValueChange={(value) => handleChange('strategy_id', value === 'none' ? '' : value)}>
                 <SelectTrigger>
                   <SelectValue placeholder="Select strategy" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">No Strategy</SelectItem>
+                  <SelectItem value="none">No Strategy</SelectItem>
                   {strategies.map(strategy => (
                     <SelectItem key={strategy.id} value={strategy.id}>
                       {strategy.name}
